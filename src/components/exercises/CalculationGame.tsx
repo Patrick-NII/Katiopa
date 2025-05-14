@@ -20,9 +20,10 @@ import {
 } from '@chakra-ui/react';
 import { FaClock, FaTrophy, FaStar, FaCalculator, FaRedo, FaCoins, FaQuestionCircle } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GameInterface } from '../games/GameInterface';
-import { GameTheme } from '../games/GameTheme';
-import { Theme, Avatar } from '../games/GameTheme';
+import { GameInterface } from 'components/games/GameInterface';
+import GameTheme from 'components/games/GameTheme';
+import { Theme } from 'components/games/Theme';
+import { Avatar } from 'components/games/Avatar';
 
 const MotionBox = motion(Box);
 const MotionFlex = motion(Flex);

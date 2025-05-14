@@ -11,8 +11,8 @@ import {
 } from '@chakra-ui/react';
 import { LudoGame } from '@/components/exercises/LudoGame';
 import { CalculationGame } from '@/components/exercises/CalculationGame';
-import MathAdventure from '@/components/games/MathAdventure';
-import LogiQuest from '@/components/games/LogiQuest';
+import MathAdventure from 'components/games/MathAdventure';
+import LogiQuest from 'components/games/LogiQuest';
 
 interface Game {
   id: string;
@@ -32,7 +32,7 @@ const games: Game[] = [
     title: 'Math Adventure',
     description: 'Partez à l\'aventure dans un monde magique où les mathématiques sont la clé du succès !',
     difficulty: 'medium',
-    imageUrl: '/images/games/9625DC73-C8F8-410D-8959-7CF5CB024B23.webp',
+    imageUrl: '/katiopa/images/games/9625DC73-C8F8-410D-8959-7CF5CB024B23.webp',
     type: 'calculation',
     features: [
       'Système de progression avec niveaux',
@@ -49,7 +49,7 @@ const games: Game[] = [
     title: 'Ludo Mathématique - Facile',
     description: 'Joue au Ludo en résolvant des additions et soustractions simples',
     difficulty: 'easy',
-    imageUrl: '/images/games/ludo-easy.png',
+    imageUrl: '/katiopa/images/games/ludo-easy.png',
     type: 'ludo',
     features: ['Mode multijoueur (2-4 joueurs)', 'Additions simples', 'Soustractions simples', 'Animations interactives'],
     players: 4,
@@ -60,7 +60,7 @@ const games: Game[] = [
     title: 'Ludo Mathématique - Moyen',
     description: 'Défie Okapi avec des calculs plus complexes',
     difficulty: 'medium',
-    imageUrl: '/images/games/ludo-medium.png',
+    imageUrl: '/katiopa/images/games/ludo-medium.png',
     type: 'ludo',
     features: ['Mode contre Okapi', 'Calculs intermédiaires', 'Stratégie', 'Système de score'],
     players: 1,
@@ -71,7 +71,7 @@ const games: Game[] = [
     title: 'Ludo Mathématique - Expert',
     description: 'Le défi ultime contre Okapi',
     difficulty: 'hard',
-    imageUrl: '/images/games/ludo-hard.png',
+    imageUrl: '/katiopa/images/games/ludo-hard.png',
     type: 'ludo',
     features: ['Mode expert contre Okapi', 'Calculs complexes', 'Stratégie avancée', 'Classement'],
     players: 1,
@@ -82,7 +82,7 @@ const games: Game[] = [
     title: 'Jeu de Calcul - Facile',
     description: 'Résous des opérations simples en un temps limité',
     difficulty: 'easy',
-    imageUrl: '/images/games/calculation-easy.png',
+    imageUrl: '/katiopa/images/games/calculation-easy.png',
     type: 'calculation',
     features: [],
     players: 1,
@@ -92,7 +92,7 @@ const games: Game[] = [
     title: 'Jeu de Calcul - Moyen',
     description: 'Teste tes compétences en calcul mental',
     difficulty: 'medium',
-    imageUrl: '/images/games/calculation-medium.png',
+    imageUrl: '/katiopa/images/games/calculation-medium.png',
     type: 'calculation',
     features: [],
     players: 1,
@@ -102,7 +102,7 @@ const games: Game[] = [
     title: 'Jeu de Calcul - Expert',
     description: 'Le défi ultime en calcul mental',
     difficulty: 'hard',
-    imageUrl: '/images/games/calculation-hard.png',
+    imageUrl: '/katiopa/images/games/calculation-hard.png',
     type: 'calculation',
     features: [],
     players: 1,
@@ -112,7 +112,7 @@ const games: Game[] = [
     title: 'LogiQuest',
     description: 'Un jeu de logique avancé avec différents types de suites et de motifs',
     difficulty: 'hard',
-    imageUrl: '/images/games/771F63D4-CC96-42B8-9FA7-33230F7DC960.webp',
+    imageUrl: '/katiopa/images/games/771F63D4-CC96-42B8-9FA7-33230F7DC960.webp',
     type: 'logique',
     features: [
       'Suites numériques complexes',

@@ -52,7 +52,7 @@ const themes: Theme[] = [
   {
     id: 'space',
     name: 'Espace',
-    background: '/images/themes/space-bg.jpg',
+    background: '/katiopa/images/themes/space-bg.jpg',
     colors: {
       primary: '#4A90E2',
       secondary: '#9013FE',
@@ -64,7 +64,7 @@ const themes: Theme[] = [
   {
     id: 'jungle',
     name: 'Jungle',
-    background: '/images/themes/jungle-bg.jpg',
+    background: '/katiopa/images/themes/jungle-bg.jpg',
     colors: {
       primary: '#2ECC71',
       secondary: '#27AE60',
@@ -76,7 +76,7 @@ const themes: Theme[] = [
   {
     id: 'ocean',
     name: 'Océan',
-    background: '/images/themes/ocean-bg.jpg',
+    background: '/katiopa/images/themes/ocean-bg.jpg',
     colors: {
       primary: '#3498DB',
       secondary: '#2980B9',
@@ -91,21 +91,21 @@ const avatars: Avatar[] = [
   {
     id: 'robot',
     name: 'Robo',
-    image: '/images/avatars/robot.png',
+    image: '/katiopa/images/avatars/robot.png',
     unlocked: true,
     cost: 0,
   },
   {
     id: 'astronaut',
     name: 'Astro',
-    image: '/images/avatars/astronaut.png',
+    image: '/katiopa/images/avatars/astronaut.png',
     unlocked: false,
     cost: 200,
   },
   {
     id: 'explorer',
     name: 'Explo',
-    image: '/images/avatars/explorer.png',
+    image: '/katiopa/images/avatars/explorer.png',
     unlocked: false,
     cost: 300,
   },

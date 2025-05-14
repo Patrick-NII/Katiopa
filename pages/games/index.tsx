@@ -22,21 +22,21 @@ const games = [
     description: "Explorez l'univers dans cette aventure spatiale épique",
     icon: FaRocket,
     href: '/games/space-adventure',
-    image: '/images/spatial.png',
+    image: '/katiopa/images/spatial.png',
   },
   {
     title: 'Puzzle Magique',
     description: 'Résolvez des énigmes magiques dans un monde fantastique',
     icon: FaPuzzlePiece,
     href: '/games/magic-puzzle',
-    image: '/images/puzzle.png',
+    image: '/katiopa/images/puzzle.png',
   },
   {
     title: 'Course Extrême',
     description: 'Affrontez des défis de course dans des environnements extrêmes',
     icon: FaRunning,
     href: '/games/extreme-race',
-    image: '/images/cours extreme.jpeg',
+    image: '/katiopa/images/cours extreme.jpeg',
   },
 ];
 

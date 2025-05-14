@@ -22,7 +22,7 @@ import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb';
 const gameInfo = {
   title: 'Aventure Spatiale',
   description: "Explorez l'univers dans cette aventure spatiale épique. Apprenez l'astronomie tout en vous amusant !",
-  image: '/images/spatial.png',
+  image: '/katiopa/images/spatial.png',
   rating: 4.8,
   players: 1250,
   duration: '30-45 min',

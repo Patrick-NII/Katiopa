@@ -457,7 +457,7 @@ const TicTacToe = () => {
   return (
     <Container maxW="container.md" py={8}>
       <VStack spacing={8}>
-        <Image src="/images/tictactoe.webp" alt="Tic Tac Toe" maxW="200px" />
+        <Image src="/katiopa/images/tictactoe.webp" alt="Tic Tac Toe" maxW="200px" />
         <Heading>Tic Tac Toe</Heading>
 
         <Tabs variant="soft-rounded" colorScheme="blue" width="100%">

@@ -147,7 +147,7 @@ const CommunityPreview = () => (
     animation={`${fadeIn} 0.5s ease-out`}
   >
     <Image
-      src="/images/community.jpeg"
+      src="/katiopa/images/community.jpeg"
       alt="Communauté"
       objectFit="cover"
       w="full"
@@ -335,17 +335,17 @@ export default function Home() {
     {
       title: "Code Magique",
       description: "Découvre la programmation en créant tes propres sorts magiques !",
-      image: "/images/spatial.png"
+      image: "/katiopa/images/spatial.png"
     },
     {
       title: "Math Quest",
       description: "Une aventure où les mathématiques deviennent des super-pouvoirs.",
-      image: "/images/puzzle.png"
+      image: "/katiopa/images/puzzle.png"
     },
     {
       title: "Science Lab",
       description: "Explore le monde des sciences à travers des expériences fascinantes.",
-      image: "/images/cours extreme.jpeg"
+      image: "/katiopa/images/cours extreme.jpeg"
     }
   ];
 
@@ -370,7 +370,7 @@ export default function Home() {
           left={0}
           right={0}
           bottom={0}
-          bgImage="url('/images/hero-bg.webp')"
+          bgImage="url('/katiopa/images/hero-bg.webp')"
           bgSize="cover"
           bgPosition="center"
           bgRepeat="no-repeat"
@@ -412,7 +412,7 @@ export default function Home() {
               mt={{ base: 4, lg: 0 }}
             >
               <Image
-                src="/images/hero.webp"
+                src="/katiopa/images/hero.webp"
                 alt="Katiopa Educational Platform"
                 borderRadius="2xl"
                 objectFit="cover"

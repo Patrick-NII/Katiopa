@@ -22,7 +22,7 @@ import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb';
 const gameInfo = {
   title: 'Course Extrême',
   description: 'Affrontez des défis de course dans des environnements extrêmes. Développez vos réflexes et votre stratégie !',
-  image: '/images/cours extreme.jpeg',
+  image: '/katiopa/images/cours extreme.jpeg',
   rating: 4.7,
   players: 1500,
   duration: '15-25 min',

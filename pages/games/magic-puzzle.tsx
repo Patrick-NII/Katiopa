@@ -22,7 +22,7 @@ import { Breadcrumb } from '../../components/Breadcrumb/Breadcrumb';
 const gameInfo = {
   title: 'Puzzle Magique',
   description: 'Résolvez des énigmes magiques dans un monde fantastique. Développez votre logique et votre créativité !',
-  image: '/images/puzzle.png',
+  image: '/katiopa/images/puzzle.png',
   rating: 4.9,
   players: 980,
   duration: '20-30 min',

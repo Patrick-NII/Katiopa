@@ -32,6 +32,10 @@ import {
 } from '@chakra-ui/react';
 import { FaStar, FaTrophy, FaHeart, FaGem, FaMagic, FaBrain, FaLightbulb, FaChess, FaPuzzlePiece } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { GameInterface } from './GameInterface';
+import GameTheme from './GameTheme';
+import { Theme } from './Theme';
+import { Avatar } from './Avatar';
 
 const MotionBox = motion(Box);
 const MotionText = motion(Text);

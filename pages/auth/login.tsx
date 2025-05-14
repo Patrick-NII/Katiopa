@@ -138,7 +138,7 @@ export default function LoginPage() {
       <VStack spacing={8} align="stretch">
         <Flex direction="column" align="center" mb={8}>
           <Image
-            src="/images/okapi-logo.png"
+            src="/katiopa/images/okapi-logo.png"
             alt="Okapi Logo"
             width="150px"
             mb={4}
