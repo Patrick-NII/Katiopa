@@ -296,19 +296,19 @@ export default function JeuxPage() {
                     <VStack align="stretch" spacing={2}>
                       <Heading size="md">{game.title}</Heading>
                       <Text color="gray.600">{game.description}</Text>
-                      <HStack spacing={2} mb={2}>
-                        <Badge colorScheme="blue">{game.players} {game.players > 1 ? 'joueurs' : 'joueur'}</Badge>
-                        {game.duration && <Badge colorScheme="purple">{game.duration}</Badge>}
-                      </HStack>
+                          <HStack spacing={2} mb={2}>
+                            <Badge colorScheme="blue">{game.players} {game.players > 1 ? 'joueurs' : 'joueur'}</Badge>
+                            {game.duration && <Badge colorScheme="purple">{game.duration}</Badge>}
+                          </HStack>
                       {game.features && (
-                        <VStack align="start" spacing={1}>
-                          {game.features.map((feature, index) => (
-                            <HStack key={index} spacing={2}>
-                              <Icon as={FaStar} color="yellow.400" boxSize={3} />
-                              <Text fontSize="sm" color="gray.600">{feature}</Text>
-                            </HStack>
-                          ))}
-                        </VStack>
+                          <VStack align="start" spacing={1}>
+                            {game.features.map((feature, index) => (
+                              <HStack key={index} spacing={2}>
+                                <Icon as={FaStar} color="yellow.400" boxSize={3} />
+                                <Text fontSize="sm" color="gray.600">{feature}</Text>
+                              </HStack>
+                            ))}
+                          </VStack>
                       )}
                     </VStack>
                     <Button
