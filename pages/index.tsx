@@ -14,7 +14,7 @@ import {
   Image,
   chakra,
 } from '@chakra-ui/react';
-import { FaGamepad, FaUsers, FaRobot, FaLightbulb, FaChartLine, FaComments } from 'react-icons/fa';
+import { FaGamepad, FaUsers, FaRobot, FaLightbulb, FaChartLine, FaComments, FaUserPlus, FaSignInAlt } from 'react-icons/fa';
 import { keyframes } from '@emotion/react';
 import { useRouter } from 'next/router';
 import { motion, useAnimation, useInView } from 'framer-motion';
@@ -353,6 +353,25 @@ export default function Home() {
 
   return (
     <Box>
+      {/* Boutons de test inscription/connexion */}
+      <Flex justify="center" align="center" gap={4} py={4}>
+        <Button
+          leftIcon={<FaUserPlus />}
+          colorScheme="green"
+          variant="solid"
+          onClick={() => router.push('/auth/register')}
+        >
+          Tester l'inscription
+        </Button>
+        <Button
+          leftIcon={<FaSignInAlt />}
+          colorScheme="blue"
+          variant="outline"
+          onClick={() => router.push('/auth/login')}
+        >
+          Tester la connexion
+        </Button>
+      </Flex>
       {/* Hero Section */}
       <Box
         position="relative"
