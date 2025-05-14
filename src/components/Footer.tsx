@@ -10,6 +10,7 @@ import {
   VStack,
   Flex,
   Button,
+  HStack,
 } from '@chakra-ui/react';
 import {
   FaTwitter,
@@ -19,8 +20,11 @@ import {
   FaDiscord,
   FaGithub,
   FaEnvelope,
+  FaUserPlus,
+  FaSignInAlt,
 } from 'react-icons/fa';
 import NextLink from 'next/link';
+import { useRouter } from 'next/router';
 
 export function Footer() {
   const textColor = useColorModeValue('gray.600', 'gray.300');
@@ -31,6 +35,7 @@ export function Footer() {
     'rgba(255, 255, 255, 0.8)',
     'rgba(26, 32, 44, 0.8)'
   );
+  const router = useRouter();
 
   const sections = [
     {
@@ -110,6 +115,20 @@ export function Footer() {
             >
               contact@katiopa.com
             </Button>
+            <Text fontSize="sm" color={textColor} pt={2} fontWeight="medium">
+              Nouveau sur Katiopa ?{' '}
+              <Link
+                as={NextLink}
+                href="/auth/register"
+                color="green.500"
+                fontWeight="bold"
+                _hover={{ color: 'green.600', textDecoration: 'underline', transform: 'translateY(-2px)' }}
+                transition="all 0.2s"
+                aria-label="S'inscrire sur Katiopa"
+              >
+                Cliquez ici pour créer un compte gratuitement
+              </Link>
+            </Text>
           </VStack>
 
           {sections.map((section) => (
