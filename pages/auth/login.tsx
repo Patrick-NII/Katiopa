@@ -23,6 +23,7 @@ import {
 } from '@chakra-ui/react';
 import { FaGoogle } from 'react-icons/fa';
 import NextLink from 'next/link';
+import { ROUTES } from '@/config/routes';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -35,7 +36,7 @@ export default function LoginPage() {
 
   // Si l'utilisateur est déjà connecté, rediriger vers l'espace personnel
   if (status === 'authenticated') {
-    router.push('/espace-personnel');
+    router.push(`${router.basePath}${ROUTES.PERSONAL_SPACE}`);
     return null;
   }
 
@@ -51,7 +52,7 @@ export default function LoginPage() {
         redirect: false,
         email,
         password,
-        callbackUrl: '/espace-personnel'
+        callbackUrl: `${router.basePath}${ROUTES.PERSONAL_SPACE}`
       });
 
       console.log('Résultat de la connexion:', result);
@@ -67,7 +68,7 @@ export default function LoginPage() {
           isClosable: true,
         });
       } else {
-        console.log('Connexion réussie, redirection vers:', '/espace-personnel');
+        console.log('Connexion réussie, redirection vers:', `${router.basePath}${ROUTES.PERSONAL_SPACE}`);
         toast({
           title: 'Connexion réussie',
           description: 'Vous êtes maintenant connecté',
@@ -76,7 +77,7 @@ export default function LoginPage() {
           isClosable: true,
         });
         // Force le rafraîchissement de la page pour mettre à jour la session
-        window.location.href = '/espace-personnel';
+        window.location.href = `${router.basePath}${ROUTES.PERSONAL_SPACE}`;
       }
     } catch (error) {
       console.error('Erreur lors de la connexion:', error);
@@ -101,7 +102,7 @@ export default function LoginPage() {
       
       const result = await signIn('google', { 
         redirect: false,
-        callbackUrl: '/espace-personnel'
+        callbackUrl: `${router.basePath}${ROUTES.PERSONAL_SPACE}`
       });
       
       console.log('Résultat de la connexion Google:', result);

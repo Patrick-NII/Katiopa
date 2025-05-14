@@ -353,25 +353,6 @@ export default function Home() {
 
   return (
     <Box>
-      {/* Boutons de test inscription/connexion */}
-      <Flex justify="center" align="center" gap={4} py={4}>
-        <Button
-          leftIcon={<FaUserPlus />}
-          colorScheme="green"
-          variant="solid"
-          onClick={() => router.push('/auth/register')}
-        >
-          Tester l'inscription
-        </Button>
-        <Button
-          leftIcon={<FaSignInAlt />}
-          colorScheme="blue"
-          variant="outline"
-          onClick={() => router.push('/auth/login')}
-        >
-          Tester la connexion
-        </Button>
-      </Flex>
       {/* Hero Section */}
       <Box
         position="relative"

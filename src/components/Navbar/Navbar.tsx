@@ -37,7 +37,7 @@ import { signOut, signIn, useSession } from 'next-auth/react';
 import { FamilyMembers } from '../FamilyMembers';
 import { FaGraduationCap, FaGamepad, FaPencilAlt, FaUsers, FaUser, FaCog, FaSignOutAlt, FaMoon, FaSun, FaHome, FaBook, FaTasks, FaChartLine, FaRocket, FaPuzzlePiece, FaRunning, FaPlus, FaFolder, FaCopy, FaComments, FaTrophy, FaCalendar, FaCrown } from 'react-icons/fa';
 import React, { useEffect } from 'react';
-import { ROUTES } from '../../config/routes';
+import { ROUTES } from '@/config/routes';
 import { ProfilePictureUploader } from '../Profile/ProfilePictureUploader';
 import styles from '../../styles/navbar.module.css';
 import { keyframes } from '@emotion/react';
@@ -262,7 +262,7 @@ export default function Navbar() {
                     </Box>
                   </HStack>
                   <Stack spacing={1}>
-                    <Link href="/espace-personnel" passHref legacyBehavior>
+                    <Link href={`${router.basePath}${ROUTES.PERSONAL_SPACE}`} passHref legacyBehavior>
                       <ChakraLink
                         p={2}
                         px={3}

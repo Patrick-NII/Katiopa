@@ -125,7 +125,7 @@ export default function PersonalSpace() {
                 </HStack>
                 
                 <VStack spacing={4} align="stretch">
-                  <Link href={ROUTES.CREATE.COURSE} passHref>
+                  <Link href={ROUTES.CREATE.COURSE}>
                     <ChakraLink>
                       <Button leftIcon={<FaPlus />} w="full" justifyContent="flex-start">
                         Créer un nouveau cours
@@ -133,7 +133,7 @@ export default function PersonalSpace() {
                     </ChakraLink>
                   </Link>
                   
-                  <Link href={ROUTES.CREATE.GAME} passHref>
+                  <Link href={ROUTES.CREATE.GAME}>
                     <ChakraLink>
                       <Button leftIcon={<FaPlus />} w="full" justifyContent="flex-start">
                         Créer un nouveau jeu

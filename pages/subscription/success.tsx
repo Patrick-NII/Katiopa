@@ -43,7 +43,7 @@ export default function SubscriptionSuccess() {
           <Button
             colorScheme="green"
             size="lg"
-            onClick={() => router.push(ROUTES.PERSONAL_SPACE)}
+            onClick={() => router.push(`${router.basePath}${ROUTES.PERSONAL_SPACE}`)}
           >
             Accéder à mon espace personnel
           </Button>

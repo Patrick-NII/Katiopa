@@ -10,6 +10,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-export default function ProfileSettingsRedirect() {
+export default function ProfileRedirect() {
   return null;
 } 

@@ -115,14 +115,14 @@ export function Footer() {
             >
               contact@katiopa.com
             </Button>
-            <Text fontSize="sm" color={textColor} pt={2} fontWeight="medium">
+            <Text fontSize="sm" color={textColor} pt={2}>
               Nouveau sur Katiopa ?{' '}
               <Link
                 as={NextLink}
                 href="/auth/register"
-                color="green.500"
-                fontWeight="bold"
-                _hover={{ color: 'green.600', textDecoration: 'underline', transform: 'translateY(-2px)' }}
+                color="brand.500"
+                fontWeight="normal"
+                _hover={{ color: 'brand.600', textDecoration: 'underline', transform: 'translateY(-2px)' }}
                 transition="all 0.2s"
                 aria-label="S'inscrire sur Katiopa"
               >

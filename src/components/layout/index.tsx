@@ -14,7 +14,6 @@ export function Layout({ children }: LayoutProps) {
   const noFooterPages = [
     '/connexion',
     '/inscription',
-    '/espace-personnel',
     '/auth/login',
     '/auth/register'
   ];

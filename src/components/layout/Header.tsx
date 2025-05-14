@@ -21,6 +21,7 @@ import { useRouter } from 'next/router';
 import { FiMenu, FiUser, FiHome, FiUsers, FiBook, FiSettings, FiLogOut } from 'react-icons/fi';
 import { useSession, signOut } from 'next-auth/react';
 import NextLink from 'next/link';
+import { ROUTES } from '@/config/routes';
 
 const Header = () => {
   const router = useRouter();
@@ -190,7 +191,7 @@ const Header = () => {
               <MenuList bg={menuBg}>
                 <MenuItem
                   icon={<FiUser />}
-                  onClick={() => router.push('/espace-personnel')}
+                  onClick={() => router.push(`${router.basePath}${ROUTES.PERSONAL_SPACE}`)}
                   _hover={{ bg: menuHoverBg }}
                 >
                   Mon Espace
