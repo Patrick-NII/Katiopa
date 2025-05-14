@@ -317,7 +317,7 @@ katiopa/
   - Chiffrement des données sensibles
   - Stockage sécurisé
   - Anonymisation des données
-  - Conformité RGPD
+- Conformité RGPD
 
 - **Sécurité des Enfants**
   - Filtrage du contenu
