@@ -1,0 +1,32 @@
+.navLink {
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--chakra-colors-gray-800);
+}
+
+[data-theme="dark"] .navLink:hover {
+  color: white;
+}
+
+.subnavLink {
+  transition: background-color 0.3s ease;
+}
+
+.subnavLink:hover {
+  background-color: var(--chakra-colors-pink-50);
+}
+
+[data-theme="dark"] .subnavLink:hover {
+  background-color: var(--chakra-colors-gray-900);
+}
+
+.subnavLink:hover .subnavText {
+  color: var(--chakra-colors-pink-400);
+}
+
+.subnavLink:hover .subnavArrow {
+  transform: translateX(0);
+  opacity: 1;
+} 
