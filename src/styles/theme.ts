@@ -28,8 +28,8 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    heading: '"Comic Sans MS", "Comic Sans", cursive',
-    body: '"Comic Sans MS", "Comic Sans", cursive',
+    heading: '"Baloo 2", cursive',
+    body: '"Baloo 2", cursive',
   },
   components: {
     Button: {
@@ -86,12 +86,20 @@ const theme = extendTheme({
     },
   },
   styles: {
-    global: {
+    global: (props) => ({
       body: {
-        bg: 'brand.50',
-        color: 'gray.800',
+        bg: props.colorMode === 'dark' ? 'var(--chakra-colors-brand-900)' : 'brand.50',
+        color: props.colorMode === 'dark' ? 'white' : 'gray.800',
+        backgroundImage: props.colorMode === 'dark' ? 'linear-gradient(45deg, var(--chakra-colors-brand-900), var(--chakra-colors-secondary-800))' : 'none',
+        backgroundSize: '400% 400%',
+        animation: props.colorMode === 'dark' ? 'gradient 15s ease infinite' : 'none',
       },
-    },
+      '@keyframes gradient': {
+        '0%': { backgroundPosition: '0% 50%' },
+        '50%': { backgroundPosition: '100% 50%' },
+        '100%': { backgroundPosition: '0% 50%' },
+      },
+    }),
   },
   config: {
     initialColorMode: 'light',
